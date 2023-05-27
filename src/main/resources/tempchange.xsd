@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.mscdemo1.com/spring/soap/api/temp"
+	xmlns:tns="http://www.mscdemo1.com/spring/soap/api/temp"
+	elementFormDefault="qualified">
+
+	<xsd:element name="UserRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="tempUnits" type="xsd:string" />
+				<xsd:element name="temp" type="xsd:float" />				
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Acknowledgement">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="temp" type="xsd:float" />
+				<xsd:element name="tempUnits" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
